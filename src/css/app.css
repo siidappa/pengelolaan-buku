@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 20px 0;
+}
+
+input {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 600;
+}
+
+/* Margin */
+.m_auto {
+    margin: auto;
+}
+.mr_0 {
+    margin-right: 0;
+}
+.ml_0 {
+    margin-left: 0;
+}
+.mb_1 {
+    margin-bottom: 1.2rem;
+}
+.mr_1 {
+    margin-right: 1rem;
+}
+.mt_1 {
+    margin-top: 1rem;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.__container__ {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.judulBesar {
+    font-weight: 700;
+    margin: auto 0;
+    color: #333;
+}
+
+.containerFlex {
+    display: flex;
+}
+
+.flexItem {
+    flex: 1;
+}
+
+.flexSpaceBeetwen {
+    justify-content: space-between;
+}
+
+header > div {
+    background-color: var(--backgroundColor);
+    padding: 10px 30px;
+    border-radius: 17px;
+}
+
+header img {
+    width: 40px;
+    margin-top: 2px;
+    margin-right: 15px;
+}
+
+main {
+    margin-block: 20px;
+}
+
+.button, .addButton {
+    border: 3px solid #333;
+    color: white;
+    font-weight: 700;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    padding: 10px 10px;
+    padding-inline: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #00bbf9;
+}
+
+.addButton:hover {
+    background-color: #2e8ab4;
+}
+
+.buttonSearchBook {
+    padding: 10px 10px;
+    padding-inline: 20px;
+    border-radius: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #00bbf9;
+    color: white;
+    border: 3px solid #333;
+}
+
+.button:hover {
+    background-color: #2e8ab4;
+}
+
+.button img {
+    width: 15px;
+}
+
+.buttonSearchBook img {
+    width: 13px;
+}
+
+.inputText {
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#listBuku {
+   margin-top: 20px; 
+}
+#listBuku div h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+#listBuku .card img {
+    width: 50px;
+    margin-top: -6px;
+}
+#listBuku div h3 span {
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.toolsBarGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+}
+
+.card-404 span {
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    margin: 6px 0 0 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttonHapus {
+    background-color: #e74c3c;
+}
+
+.buttonHapus:hover {
+    background-color: #c0392b;
+}
+
+.buttonEdit {
+    background-color: transparent;
+    border: 3px solid #333;
+    color: #f1c40f;
+}
+.buttonEdit:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+.buttonMove {
+    float: right;
+}
+
+#__formWrapper__ {
+    margin-top: 10px;
+}
+#formBuku {
+    background-color: #ededed;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+#formBuku h3 {
+    font-weight: bold;
+    font-size: 15.6px;
+}
+#formBuku input {
+    width: 95%;
+}
+#formBuku .formGrouping label {
+    font-size: 20px;
+}
+#formBuku input.custom {
+    width: 30px;
+}
+
+.formGrouping {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px){
+    #listBuku.containerFlex {
+        flex-direction: column;
+    }
+    .__container__ {
+        width: 90%;
+    }
+}

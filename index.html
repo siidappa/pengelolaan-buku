@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Akhir Bookshelf Apps</title>
+    <link rel="stylesheet" href="./src/css/app.css">
+  </head>
+  <body>
+    <!-- Heading -->
+    <header class="__container__">
+      <div class="containerFlex flexSpaceBeetwen">
+        <div class="flexItem containerFlex">
+          <h1 class="judulBesar">Pengelolaan Buku</h1>
+        </div>
+        <div class="flexItem textRight">
+          <img src="./asset/images/profile.png" alt="Profile" class="mr_0" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="__container__">
+        <!-- Tools -->
+        <section>
+          <div class="toolBar mt_1 containerFlex flexSpaceBeetwen">
+            <div>
+              <button id="buttonAddBaru" class="addButton" type="button">
+                Tambah Buku
+              </button>
+            </div>
+            <div class="toolsBarGroup">
+              <input type="text" class="inputText mr_1" id="querySearch" placeholder="Cari Buku ...">
+              <button class="buttonSearchBook" type="button" id="buttonSearch">
+                  <ion-icon name="search"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Form Buku -->
+        <section>
+          <div class="hidden" id="__formWrapper__">
+            <form id="formBuku">
+              <h3>Form Buku</h3>
+              <input type="hidden" id="bukuId" />
+              <div class="formGrouping">
+                <label>Judul</label>
+                <input type="text" class="inputText" id="inputJudulBuku" required />
+              </div>
+              <div class="formGrouping">
+                <label>Penulis</label>
+                <input type="text" class="inputText" id="inputPenulisBuku" required />
+              </div>
+              <div class="formGrouping">
+                <label>Tahun Penulisan</label>
+                <input type="number" class="inputText" id="inputTahunPenulisanBuku" required />
+              </div>
+              <div class="formGrouping">
+                <label>Sudah Selesai Dibaca</label>
+                <input type="checkbox" class="custom" id="inputBukuSelesaiBaca" />
+              </div>
+              <div class="mt_1 textRight">
+                <button id="buttonDiscard" class="button buttonHapus" type="button">
+                  Tutup
+                </button>
+                <button class="button buttonSimpan" type="submit">
+                  Simpan
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- List Buku -->
+        <section>
+          <div id="listBuku" class="containerFlex flexSpaceBeetwen">
+            <div class="flexItem mr_1"  id="tidakSelesai" >
+              <h3>Belum selesai dibaca</h3>
+              <div class="card card-404">
+                <img src="./asset/images/reading-book.png" alt="###" class="membacaBuku">
+                <span>Buku tidak ditemukan, Tambahkan buku baru</span>
+              </div>
+            </div>
+            <div class="flexItem ml_1" id="sudahSelesai">
+              <h3>Selesai dibaca</h3>
+              <div class="card card-404">
+                <img src="./asset/images/book.png" alt="###">
+                <span>Buku tidak ditemukan, Tambahkan buku baru</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./src/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
