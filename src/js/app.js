@@ -153,7 +153,7 @@ function rendering() {
         elementBuku.innerHTML = `
             <div>
                 <h3>${buku.title}</h3>
-                <p class="mb_1">Author: ${buku.author} | Year: ${buku.year}</p>
+                <p class="mb_1 information">Penulis: ${buku.author} | Tahun: ${buku.year}</p>
             </div>
             <div>
                 <button class="button buttonEdit" onclick="perbaharuiBuku(${buku.id})">Edit</button>

@@ -213,6 +213,12 @@ main {
     margin-top: 10px;
 }
 
+.information {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 800px){
     #listBuku.containerFlex {
         flex-direction: column;
